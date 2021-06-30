@@ -19,15 +19,17 @@ namespace WPCSharp.CreationalPatterns.Builder
 
             //var vehicle = vehicleBuilder.Build();
 
-            var vehicle = new VehicleBuilder()
+            var builder = new VehicleBuilder()
             .SetDoors(2)
             .SetSeats(2)
             .SetWheels(4)
             .SetEnginePower(100)
-            .SetTrunkCapacity(500)
-            .Build();
+            .SetTrunkCapacity(500);
 
-            Console.WriteLine(vehicle);
+            Console.WriteLine(builder.Build());
+
+            builder.SetWheels(3);
+            Console.WriteLine(builder.Build());
         }
     }
 }
