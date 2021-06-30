@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.CreationalPatterns.Builder.Client.Execute();
+            WPCSharp.CreationalPatterns.FactoryMethod.Client.Execute();
 
         }
 
