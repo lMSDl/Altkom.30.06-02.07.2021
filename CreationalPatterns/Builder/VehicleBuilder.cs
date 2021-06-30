@@ -10,26 +10,31 @@ namespace WPCSharp.CreationalPatterns.Builder
     {
         private Vehicle _vehicle = new Vehicle();
 
-        public void SetWheels(int value)
+        public VehicleBuilder SetWheels(int value)
         {
             _vehicle.Wheels = value;
+            return this;
         }
-        public void SetSeats(int value)
+        public VehicleBuilder SetSeats(int value)
         {
             _vehicle.Seats = value;
+            return this;
         }
-        public void SetDoors(int value)
+        public VehicleBuilder SetDoors(int value)
         {
             _vehicle.Doors = value;
+            return this;
         }
-        public void SetTrunkCapacity(int? value)
+        public VehicleBuilder SetTrunkCapacity(int? value)
         {
             _vehicle.TrunkCapacity = value;
+            return this;
 
         }
-        public void SetEnginePower(int? value)
+        public VehicleBuilder SetEnginePower(int? value)
         {
             _vehicle.EnginePower = value;
+            return this;
         }
 
         public Vehicle Build()
