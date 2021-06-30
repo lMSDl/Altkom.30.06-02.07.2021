@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.CreationalPatterns.ObjectPool.Client.Execute();
+            WPCSharp.StructuralPatterns.Adapter.I.Client.Execute();
 
         }
 
