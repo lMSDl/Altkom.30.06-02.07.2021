@@ -10,16 +10,6 @@ namespace WPCSharp.DesignPrinciples
     {
         private ICollection<PaymentAccount> Accounts { get; } = new List<PaymentAccount> { new PaymentAccount(1), new PaymentAccount(2), new PaymentAccount(3), new PaymentAccount(4), new PaymentAccount(5) };
 
-        public bool DeleteAccount(PaymentAccount account)
-        {
-            return Accounts.Remove(account);
-        }
-
-        public PaymentAccount FindByAllowedDebit(float allowedDebit)
-        {
-            return Accounts.SingleOrDefault(x => x.AllowedDebit == allowedDebit);
-        }
-
         public bool Charge(int accountId, float amount)
         {
             var account = FindAccountById(accountId);
