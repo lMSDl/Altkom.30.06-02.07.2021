@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.StructuralPatterns.Proxy.Client.Execute();
+            WPCSharp.BehavioralPatterns.ChainOfResponsibility.II.Client.Execute();
 
         }
 
