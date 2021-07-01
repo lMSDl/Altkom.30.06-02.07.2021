@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.StructuralPatterns.Adapter.I.Client.Execute();
+            WPCSharp.StructuralPatterns.Adapter.II.Client.Execute();
 
         }
 
