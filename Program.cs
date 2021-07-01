@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.BehavioralPatterns.ChainOfResponsibility.II.Client.Execute();
+            WPCSharp.BehavioralPatterns.Command.Client.Execute();
 
         }
 
