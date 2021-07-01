@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace WPCSharp.CreationalPatterns.Builder
 {
-    public class VehicleBuilder
+    public class VehicleBuilder : VehicleBuilderFacade
     {
-        private Vehicle _vehicle = new Vehicle();
+        public VehicleBuilder()
+        {
+        }
+
+        public VehicleBuilder(Vehicle vehicle) : base(vehicle)
+        {
+        }
 
         public VehicleBuilder SetWheels(int value)
         {
@@ -37,9 +43,5 @@ namespace WPCSharp.CreationalPatterns.Builder
             return this;
         }
 
-        public Vehicle Build()
-        {
-            return (Vehicle)_vehicle.Clone();
-        }
     }
 }

@@ -19,16 +19,27 @@ namespace WPCSharp.CreationalPatterns.Builder
 
             //var vehicle = vehicleBuilder.Build();
 
-            var builder = new VehicleBuilder()
-            .SetDoors(2)
-            .SetSeats(2)
-            .SetWheels(4)
-            .SetEnginePower(100)
-            .SetTrunkCapacity(500);
+            //var builder = new VehicleBuilder()
+            //.SetDoors(2)
+            //.SetSeats(2)
+            //.SetWheels(4)
+            //.SetEnginePower(100)
+            //.SetTrunkCapacity(500);
+
+            var builder = new VehicleBuilderFacade()
+                .Components
+                    .SetDoors(2)
+                    .SetSeats(2)
+                    .SetWheels(4)
+                    .SetEnginePower(100)
+                    .SetTrunkCapacity(500)
+                 .Info
+                    .SetModel("SuperModel")
+                    .SetManufacturer("Altkom");
 
             Console.WriteLine(builder.Build());
 
-            builder.SetWheels(3);
+            builder.Components.SetWheels(3);
             Console.WriteLine(builder.Build());
         }
     }
