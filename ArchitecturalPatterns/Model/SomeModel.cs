@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace ArchitecturalPatterns.Model
 {
-    public class SomeModel
+    public class SomeModel : NotifyPropertyChanged
     {
-        public string Value { get; set; }
+        private string _value;
+
+        public string Value
+        {
+            get => _value;
+            set
+            {
+                _value = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }

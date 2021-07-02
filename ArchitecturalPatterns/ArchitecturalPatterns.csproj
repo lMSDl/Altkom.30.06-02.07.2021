@@ -55,14 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Model\NotifyPropertyChanged.cs" />
     <Compile Include="Presenter\IPresenter.cs" />
     <Compile Include="Presenter\IView.cs" />
     <Compile Include="Presenter\Presenter.cs" />
+    <Compile Include="ViewModel\ViewModel.cs" />
     <Compile Include="View\MvcView.xaml.cs">
       <DependentUpon>MvcView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MvpView.xaml.cs">
       <DependentUpon>MvpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MvvmView.xaml.cs">
+      <DependentUpon>MvvmView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MvpView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MvvmView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

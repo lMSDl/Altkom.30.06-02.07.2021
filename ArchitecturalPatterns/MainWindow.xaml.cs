@@ -28,7 +28,7 @@ namespace ArchitecturalPatterns
 
         private readonly Page _mvc = new MvcView();
         private readonly Page _mvp = new MvpView();
-        //private readonly Page _mvvm = new MvvmView();
+        private readonly Page _mvvm = new MvvmView();
 
 
         private void ToggleButton_Click_MVC(object sender, RoutedEventArgs e)
@@ -48,7 +48,7 @@ namespace ArchitecturalPatterns
         }
         private void ToggleButton_Click_MVVM(object sender, RoutedEventArgs e)
         {
-            //Frame.Navigate(_mvvm);
+            Frame.Navigate(_mvvm);
             ToggleButton_MVVM.IsChecked = true;
             ToggleButton_MVP.IsChecked = false;
             ToggleButton_MVC.IsChecked = false;
