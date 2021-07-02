@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.BehavioralPatterns.Iterator.Client.Execute();
+            WPCSharp.BehavioralPatterns.Mediator.Client.Execute();
 
         }
 
