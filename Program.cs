@@ -7,7 +7,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            WPCSharp.BehavioralPatterns.Strategy.Client.Execute();
+            WPCSharp.BehavioralPatterns.TemplateMethod.Client.Execute();
 
         }
 
